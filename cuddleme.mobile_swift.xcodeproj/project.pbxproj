@@ -11,6 +11,22 @@
 		08391D3F2C747FF100D66796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08391D3E2C747FF100D66796 /* ContentView.swift */; };
 		08391D412C747FF400D66796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08391D402C747FF400D66796 /* Assets.xcassets */; };
 		08391D442C747FF400D66796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08391D432C747FF400D66796 /* Preview Assets.xcassets */; };
+		08391D4C2C74854500D66796 /* fontViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08391D4B2C74854500D66796 /* fontViewConfig.swift */; };
+		08391D542C74869700D66796 /* AthleticsRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D4D2C74869500D66796 /* AthleticsRegular.otf */; };
+		08391D552C74869700D66796 /* GeneralSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D4E2C74869600D66796 /* GeneralSans.ttf */; };
+		08391D562C74869700D66796 /* AthleticsBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D4F2C74869600D66796 /* AthleticsBlack.otf */; };
+		08391D572C74869700D66796 /* AthleticsMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D502C74869600D66796 /* AthleticsMedium.otf */; };
+		08391D582C74869700D66796 /* AthleticsLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D512C74869600D66796 /* AthleticsLight.otf */; };
+		08391D592C74869700D66796 /* AthleticsExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D522C74869600D66796 /* AthleticsExtraBold.otf */; };
+		08391D5A2C74869700D66796 /* AthleticsBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D532C74869700D66796 /* AthleticsBold.otf */; };
+		086552422C822DA400FE47D2 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 086552412C822DA400FE47D2 /* SwiftfulRouting */; };
+		086552452C82386E00FE47D2 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086552442C82386E00FE47D2 /* profileView.swift */; };
+		086552472C8238DE00FE47D2 /* chatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086552462C8238DE00FE47D2 /* chatView.swift */; };
+		086552492C8238F200FE47D2 /* likeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086552482C8238F200FE47D2 /* likeView.swift */; };
+		0865524B2C823E5900FE47D2 /* exploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865524A2C823E5900FE47D2 /* exploreView.swift */; };
+		08EDA2842C7FD2C10057F3CA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */; };
+		08EDA2892C7FF2750057F3CA /* cuddleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDA2882C7FF2750057F3CA /* cuddleColors.swift */; };
+		08EDA28C2C7FFB4A0057F3CA /* dashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDA28B2C7FFB4A0057F3CA /* dashboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +35,22 @@
 		08391D3E2C747FF100D66796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08391D402C747FF400D66796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08391D432C747FF400D66796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08391D4B2C74854500D66796 /* fontViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontViewConfig.swift; sourceTree = "<group>"; };
+		08391D4D2C74869500D66796 /* AthleticsRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsRegular.otf; sourceTree = "<group>"; };
+		08391D4E2C74869600D66796 /* GeneralSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeneralSans.ttf; sourceTree = "<group>"; };
+		08391D4F2C74869600D66796 /* AthleticsBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsBlack.otf; sourceTree = "<group>"; };
+		08391D502C74869600D66796 /* AthleticsMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsMedium.otf; sourceTree = "<group>"; };
+		08391D512C74869600D66796 /* AthleticsLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsLight.otf; sourceTree = "<group>"; };
+		08391D522C74869600D66796 /* AthleticsExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsExtraBold.otf; sourceTree = "<group>"; };
+		08391D532C74869700D66796 /* AthleticsBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsBold.otf; sourceTree = "<group>"; };
+		08391D5B2C7486CB00D66796 /* cuddleme-mobile-swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "cuddleme-mobile-swift-Info.plist"; sourceTree = SOURCE_ROOT; };
+		086552442C82386E00FE47D2 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		086552462C8238DE00FE47D2 /* chatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatView.swift; sourceTree = "<group>"; };
+		086552482C8238F200FE47D2 /* likeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likeView.swift; sourceTree = "<group>"; };
+		0865524A2C823E5900FE47D2 /* exploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreView.swift; sourceTree = "<group>"; };
+		08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		08EDA2882C7FF2750057F3CA /* cuddleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cuddleColors.swift; sourceTree = "<group>"; };
+		08EDA28B2C7FFB4A0057F3CA /* dashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086552422C822DA400FE47D2 /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +84,13 @@
 		08391D3B2C747FF100D66796 /* cuddleme.mobile_swift */ = {
 			isa = PBXGroup;
 			children = (
+				08391D5B2C7486CB00D66796 /* cuddleme-mobile-swift-Info.plist */,
 				08391D3C2C747FF100D66796 /* cuddleme_mobile_swiftApp.swift */,
+				086552432C82384800FE47D2 /* views */,
 				08391D3E2C747FF100D66796 /* ContentView.swift */,
+				08EDA28A2C7FF8BA0057F3CA /* Profile_creation */,
+				08EDA2872C7FF1B00057F3CA /* Helpers */,
+				08EDA2822C7FD2990057F3CA /* Auth_view */,
 				08391D402C747FF400D66796 /* Assets.xcassets */,
 				08391D422C747FF400D66796 /* Preview Content */,
 			);
@@ -65,6 +103,57 @@
 				08391D432C747FF400D66796 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08391D4A2C74851300D66796 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				08391D4F2C74869600D66796 /* AthleticsBlack.otf */,
+				08391D532C74869700D66796 /* AthleticsBold.otf */,
+				08391D522C74869600D66796 /* AthleticsExtraBold.otf */,
+				08391D512C74869600D66796 /* AthleticsLight.otf */,
+				08391D502C74869600D66796 /* AthleticsMedium.otf */,
+				08391D4D2C74869500D66796 /* AthleticsRegular.otf */,
+				08391D4E2C74869600D66796 /* GeneralSans.ttf */,
+				08391D4B2C74854500D66796 /* fontViewConfig.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		086552432C82384800FE47D2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				08EDA28B2C7FFB4A0057F3CA /* dashboardView.swift */,
+				086552442C82386E00FE47D2 /* profileView.swift */,
+				086552462C8238DE00FE47D2 /* chatView.swift */,
+				086552482C8238F200FE47D2 /* likeView.swift */,
+				0865524A2C823E5900FE47D2 /* exploreView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		08EDA2822C7FD2990057F3CA /* Auth_view */ = {
+			isa = PBXGroup;
+			children = (
+				08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */,
+			);
+			path = Auth_view;
+			sourceTree = "<group>";
+		};
+		08EDA2872C7FF1B00057F3CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				08391D4A2C74851300D66796 /* Fonts */,
+				08EDA2882C7FF2750057F3CA /* cuddleColors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		08EDA28A2C7FF8BA0057F3CA /* Profile_creation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile_creation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,9 @@
 			dependencies = (
 			);
 			name = cuddleme.mobile_swift;
+			packageProductDependencies = (
+				086552412C822DA400FE47D2 /* SwiftfulRouting */,
+			);
 			productName = cuddleme.mobile_swift;
 			productReference = 08391D392C747FF100D66796 /* cuddleme.mobile_swift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 08391D302C747FF100D66796;
+			packageReferences = (
+				086552402C822DA400FE47D2 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+			);
 			productRefGroup = 08391D3A2C747FF100D66796 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +220,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08391D5A2C74869700D66796 /* AthleticsBold.otf in Resources */,
+				08391D572C74869700D66796 /* AthleticsMedium.otf in Resources */,
 				08391D442C747FF400D66796 /* Preview Assets.xcassets in Resources */,
 				08391D412C747FF400D66796 /* Assets.xcassets in Resources */,
+				08391D592C74869700D66796 /* AthleticsExtraBold.otf in Resources */,
+				08391D582C74869700D66796 /* AthleticsLight.otf in Resources */,
+				08391D552C74869700D66796 /* GeneralSans.ttf in Resources */,
+				08391D562C74869700D66796 /* AthleticsBlack.otf in Resources */,
+				08391D542C74869700D66796 /* AthleticsRegular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +239,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086552452C82386E00FE47D2 /* profileView.swift in Sources */,
 				08391D3F2C747FF100D66796 /* ContentView.swift in Sources */,
+				08EDA2892C7FF2750057F3CA /* cuddleColors.swift in Sources */,
+				08EDA2842C7FD2C10057F3CA /* OnboardingView.swift in Sources */,
+				0865524B2C823E5900FE47D2 /* exploreView.swift in Sources */,
+				086552472C8238DE00FE47D2 /* chatView.swift in Sources */,
+				08EDA28C2C7FFB4A0057F3CA /* dashboardView.swift in Sources */,
+				08391D4C2C74854500D66796 /* fontViewConfig.swift in Sources */,
 				08391D3D2C747FF100D66796 /* cuddleme_mobile_swiftApp.swift in Sources */,
+				086552492C8238F200FE47D2 /* likeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +385,7 @@
 				DEVELOPMENT_TEAM = DK55SZ3YAY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cuddleme-mobile-swift-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,6 +398,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "come.qbase.cuddleme-mobile-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +419,7 @@
 				DEVELOPMENT_TEAM = DK55SZ3YAY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cuddleme-mobile-swift-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +432,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "come.qbase.cuddleme-mobile-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		086552402C822DA400FE47D2 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		086552412C822DA400FE47D2 /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 086552402C822DA400FE47D2 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08391D312C747FF100D66796 /* Project object */;
 }
