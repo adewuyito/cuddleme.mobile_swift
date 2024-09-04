@@ -4,6 +4,7 @@ import SwiftUI
 enum CuddleFonts: String {
 		case GeneralSans = "General Sans Variable"
 		case Athletics = "Athletics"
+		case SFProRounded = "SF Pro Rounded"
 }
 
 extension Font {
@@ -12,6 +13,8 @@ extension Font {
 				case .GeneralSans:
 						Font.custom(fontType.rawValue, size: size)
 				case .Athletics:
+						Font.custom(fontType.rawValue, size: size)
+				case .SFProRounded:
 						Font.custom(fontType.rawValue, size: size)
 				}
 		}
@@ -31,6 +34,6 @@ extension Text {
 						)
 				)
 
-			return text.fontWeight(weight ?? .regular)
+				return text.fontWeight(weight ?? .regular)
 		}
 }

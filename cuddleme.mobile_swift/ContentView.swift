@@ -1,7 +1,16 @@
 import SwiftUI
+import SwiftfulRouting
 
+	
 struct ContentView: View {
 	var body: some View {
-		OnboardingView()
+		
+			OnboardingView()
+//				.toolbar(.hidden)
+		
 	}
+}
+
+#Preview {
+	ContentView()
 }

@@ -8,13 +8,11 @@
 import SwiftUI
 import SwiftfulRouting
 
-struct dashboardView: View {
-		let router: AnyRouter
+struct DashboardView: View {
 		@State var currentPage = 3
 		var body: some View {
-
 				TabView(selection: $currentPage) {
-						ExploreView(router: router)
+						ExploreView()
 								.tabItem {
 										CuddleTabItem(
 												activeImage: "explore_active",
@@ -24,7 +22,7 @@ struct dashboardView: View {
 										)
 								}.tag(0)
 
-						LikeView(router: router)
+						LikeView()
 								.tabItem {
 										CuddleTabItem(
 												activeImage: "likes_active",
@@ -35,7 +33,7 @@ struct dashboardView: View {
 
 								}.tag(1)
 
-						ChatView(router: router)
+						ChatView()
 								.tabItem {
 										CuddleTabItem(
 												activeImage: "message_active",
@@ -45,7 +43,7 @@ struct dashboardView: View {
 										)
 								}.tag(2)
 
-						ProfileView(router: router)
+						ProfileView()
 								.tabItem {
 										CuddleTabItem(
 												activeImage: "user_active",
@@ -54,11 +52,6 @@ struct dashboardView: View {
 												isActive: currentPage == 3
 										)
 								}.tag(3)
-								.navigationTitle(
-										Text("Profile")
-												.cuddleFont(.Athletics, size: 24)
-								)
-
 				}
 				.tint(.black)
 		}
@@ -91,7 +84,5 @@ struct CuddleTabItem: View {
 }
 
 #Preview {
-		RouterView {
-				router in dashboardView(router: router)
-		}
+		DashboardView()
 }
