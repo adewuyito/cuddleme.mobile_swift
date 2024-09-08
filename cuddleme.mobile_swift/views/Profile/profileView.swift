@@ -13,12 +13,17 @@ struct ProfileView: View {
     @State private var cuddleProfileTab = "premium"
 
     let cuddleFeature: [String] = ["Feature_1 name", "Feature_2 name"]
+  
+  private let userProfile = ProfileViewModel.jostevModel(
+    premiumAccount: true,
+    profileSetupComplition: 0.8
+  )
 
     var body: some View {
         RouterView { router in
             ScrollView {
                 LazyVStack {
-                    CuddleProfileInfoView()
+                  CuddleProfileInfoView(profile: userProfile)
                         .padding(.vertical, 32)
 
                     HStack(alignment: .bottom) {
@@ -78,7 +83,7 @@ struct ProfileView: View {
 
                     if activeTab1 {
                         VStack {
-                            ProfileBio(bio: bio)
+                          ProfileBio(bio: userProfile.bio)
                                 .padding(.bottom, 16)
 
                             CuddleInterestView()
@@ -91,26 +96,29 @@ struct ProfileView: View {
 
                     } else {
                         ProfileTabView(spacing: 20)
-                      
+
                         LazyVStack(alignment: .leading) {
                             Text("Bio")
                                 .cuddleFont(.Athletics, size: 18, weight: .bold)
                                 .lineSpacing(24)
                                 .padding(.bottom, 8)
 
-                          ForEach(cuddleFeature, id: \.self) { index in
+                            ForEach(cuddleFeature, id: \.self) { index in
                                 CuddleFeatures(featureName: index)
                             }
                         }.padding(.horizontal, 24)
                     }
                 }
                 .toolbar {
-                    ProfileToolBar {
+                    ProfileToolBar(
+                        setting: {
                             router.showScreen(.push) { router in
                                 SettingsView(router: router)
                                 //.navigationBarBackButtonHidden(true)
                             }
-                        } notification: {}
+                        },
+                        notification: {}
+                    )
                 }
             }
             .scrollIndicators(.hidden)
@@ -139,5 +147,3 @@ struct CuddleFeatures: View {
     ProfileView()
 }
 
-let bio =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."

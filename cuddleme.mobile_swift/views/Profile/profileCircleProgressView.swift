@@ -8,43 +8,39 @@
 import SwiftUI
 
 
-struct CircularProgressView: View {
-	let progress: Double
-	var backgroundColor: Color = .gray.opacity(0.2)
-	var lineWidth: CGFloat = 5
-	var image: String = "mock_cat"
+struct CircularProfilePictureView: View {
+  var profileModel: ProfileViewModel
 	
 	var body: some View {
-		ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
+    ZStack(alignment: .bottom) {
 			
 			Circle()
-				.stroke(.progressLight, lineWidth: lineWidth)
+				.stroke(.progressLight, lineWidth: 5)
 			
 			Circle()
-				.trim(from: 0, to: progress)
-				.stroke(appLinearGradient, style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
+        .trim(from: 0, to: profileModel.profileSetupComplition)
+				.stroke(appLinearGradient, style: StrokeStyle(lineWidth: 5, lineCap: .round))
 				.rotationEffect(.degrees(90))
-				.animation(.linear, value: progress)
+				.animation(.linear, value: profileModel.profileSetupComplition)
 			
-			Image(image)
+			Image(profileModel.profileImage)
 				.resizable()
 				.aspectRatio(0.9, contentMode: .fit)
 				.clipShape(Circle())
-//				.scaledToFit()
 			
-			
-			Text("\((progress * 100).formatted())%")
-				.cuddleFont(size: 10, weight: .medium)
-				.foregroundStyle(.white)
-				.lineSpacing(4)
-				.backgroundStyle(appLinearGradient)
-				.frame(height: 30.0)
-				.clipShape(Capsule())
-				.padding(.horizontal, 12).padding(.vertical, 4.0)
-				.background(appLinearGradient, in: Capsule())
-				.offset(y: 15)
+      if profileModel.profileSetupComplition < 1.0 {
+        Text("\((profileModel.profileSetupComplition * 100).formatted())%")
+          .cuddleFont(size: 10, weight: .medium)
+          .foregroundStyle(.white)
+          .frame(height: 30.0)
+          .padding(.horizontal, 12).padding(.vertical, 4.0)
+          .background(appLinearGradient, in: Capsule())
+          .offset(y: 15)
+      }
 			
 		}.frame(maxWidth: 158, maxHeight: 148)
 		
 	}
 }
+
+

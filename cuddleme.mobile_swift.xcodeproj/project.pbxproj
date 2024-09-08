@@ -14,6 +14,14 @@
 		0801F6112C87E51800A226F4 /* customScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801F6102C87E51700A226F4 /* customScrollView.swift */; };
 		0801F6132C885E7300A226F4 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801F6122C885E7300A226F4 /* TestView.swift */; };
 		0801F6152C88EAD200A226F4 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801F6142C88EAD200A226F4 /* userModel.swift */; };
+		0801F61D2C8A780600A226F4 /* profileSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801F61C2C8A780500A226F4 /* profileSetupView.swift */; };
+		0801F61F2C8A80FA00A226F4 /* CuddleInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801F61E2C8A80FA00A226F4 /* CuddleInputField.swift */; };
+		08124AA42C8CBC0200BFBEB8 /* CuddleGraidientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08124AA32C8CBC0200BFBEB8 /* CuddleGraidientButton.swift */; };
+		08124AA62C8CE3ED00BFBEB8 /* ProfileWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08124AA52C8CE3ED00BFBEB8 /* ProfileWelcomeView.swift */; };
+		08124AA82C8CE42500BFBEB8 /* CuddlePointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08124AA72C8CE42500BFBEB8 /* CuddlePointView.swift */; };
+		08124AAA2C8CE99F00BFBEB8 /* profileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08124AA92C8CE99F00BFBEB8 /* profileViewModel.swift */; };
+		08124AAC2C8CFF6A00BFBEB8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08124AAB2C8CFF6A00BFBEB8 /* AuthViewModel.swift */; };
+		08124AAE2C8D076600BFBEB8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08124AAD2C8D076600BFBEB8 /* SignUpView.swift */; };
 		08391D3D2C747FF100D66796 /* cuddleme_mobile_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08391D3C2C747FF100D66796 /* cuddleme_mobile_swiftApp.swift */; };
 		08391D3F2C747FF100D66796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08391D3E2C747FF100D66796 /* ContentView.swift */; };
 		08391D412C747FF400D66796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08391D402C747FF400D66796 /* Assets.xcassets */; };
@@ -39,6 +47,12 @@
 		0865525A2C827F5C00FE47D2 /* profileCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086552592C827F5C00FE47D2 /* profileCircleProgressView.swift */; };
 		0865525D2C82871600FE47D2 /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865525C2C82871600FE47D2 /* settingsView.swift */; };
 		0865525F2C8365BF00FE47D2 /* profileInterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865525E2C8365BF00FE47D2 /* profileInterestView.swift */; };
+		08DC66992C8BBCCD007AF7C2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 08DC66982C8BBCCD007AF7C2 /* FirebaseAuth */; };
+		08DC669B2C8BBCCD007AF7C2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 08DC669A2C8BBCCD007AF7C2 /* FirebaseFirestore */; };
+		08DC669D2C8BBCCD007AF7C2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 08DC669C2C8BBCCD007AF7C2 /* FirebaseMessaging */; };
+		08DC669F2C8BBCCD007AF7C2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 08DC669E2C8BBCCD007AF7C2 /* FirebaseRemoteConfig */; };
+		08DC66A12C8BBCCD007AF7C2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 08DC66A02C8BBCCD007AF7C2 /* FirebaseStorage */; };
+		08DC66A32C8BBCCD007AF7C2 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 08DC66A22C8BBCCD007AF7C2 /* FirebaseVertexAI-Preview */; };
 		08EDA2842C7FD2C10057F3CA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */; };
 		08EDA2892C7FF2750057F3CA /* cuddleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDA2882C7FF2750057F3CA /* cuddleColors.swift */; };
 		08EDA28C2C7FFB4A0057F3CA /* dashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDA28B2C7FFB4A0057F3CA /* dashboardView.swift */; };
@@ -54,6 +68,14 @@
 		0801F6102C87E51700A226F4 /* customScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customScrollView.swift; sourceTree = "<group>"; };
 		0801F6122C885E7300A226F4 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		0801F6142C88EAD200A226F4 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		0801F61C2C8A780500A226F4 /* profileSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSetupView.swift; sourceTree = "<group>"; };
+		0801F61E2C8A80FA00A226F4 /* CuddleInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuddleInputField.swift; sourceTree = "<group>"; };
+		08124AA32C8CBC0200BFBEB8 /* CuddleGraidientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuddleGraidientButton.swift; sourceTree = "<group>"; };
+		08124AA52C8CE3ED00BFBEB8 /* ProfileWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWelcomeView.swift; sourceTree = "<group>"; };
+		08124AA72C8CE42500BFBEB8 /* CuddlePointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuddlePointView.swift; sourceTree = "<group>"; };
+		08124AA92C8CE99F00BFBEB8 /* profileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewModel.swift; sourceTree = "<group>"; };
+		08124AAB2C8CFF6A00BFBEB8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		08124AAD2C8D076600BFBEB8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		08391D392C747FF100D66796 /* cuddleme.mobile_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cuddleme.mobile_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08391D3C2C747FF100D66796 /* cuddleme_mobile_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cuddleme_mobile_swiftApp.swift; sourceTree = "<group>"; };
 		08391D3E2C747FF100D66796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,13 +114,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08DC669D2C8BBCCD007AF7C2 /* FirebaseMessaging in Frameworks */,
 				086552422C822DA400FE47D2 /* SwiftfulRouting in Frameworks */,
+				08DC66992C8BBCCD007AF7C2 /* FirebaseAuth in Frameworks */,
+				08DC66A32C8BBCCD007AF7C2 /* FirebaseVertexAI-Preview in Frameworks */,
+				08DC669B2C8BBCCD007AF7C2 /* FirebaseFirestore in Frameworks */,
+				08DC669F2C8BBCCD007AF7C2 /* FirebaseRemoteConfig in Frameworks */,
+				08DC66A12C8BBCCD007AF7C2 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0801F6162C8A73B700A226F4 /* reusable_views */ = {
+			isa = PBXGroup;
+			children = (
+				08124AA32C8CBC0200BFBEB8 /* CuddleGraidientButton.swift */,
+			);
+			path = reusable_views;
+			sourceTree = "<group>";
+		};
+		0801F6192C8A777F00A226F4 /* Onboarding_flow_view */ = {
+			isa = PBXGroup;
+			children = (
+				0801F61C2C8A780500A226F4 /* profileSetupView.swift */,
+				0801F61B2C8A77B000A226F4 /* chore_views */,
+				0801F61A2C8A77A200A226F4 /* reusable */,
+			);
+			path = Onboarding_flow_view;
+			sourceTree = "<group>";
+		};
+		0801F61A2C8A77A200A226F4 /* reusable */ = {
+			isa = PBXGroup;
+			children = (
+				0801F61E2C8A80FA00A226F4 /* CuddleInputField.swift */,
+				08124AA72C8CE42500BFBEB8 /* CuddlePointView.swift */,
+			);
+			path = reusable;
+			sourceTree = "<group>";
+		};
+		0801F61B2C8A77B000A226F4 /* chore_views */ = {
+			isa = PBXGroup;
+			children = (
+				08124AA52C8CE3ED00BFBEB8 /* ProfileWelcomeView.swift */,
+			);
+			path = chore_views;
+			sourceTree = "<group>";
+		};
 		08391D302C747FF100D66796 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				08EDA28B2C7FFB4A0057F3CA /* dashboardView.swift */,
+				0801F6192C8A777F00A226F4 /* Onboarding_flow_view */,
+				0801F6162C8A73B700A226F4 /* reusable_views */,
 				08EDA2822C7FD2990057F3CA /* Auth_view */,
 				0865525B2C82870600FE47D2 /* Settings */,
 				086552512C827DA000FE47D2 /* Profile */,
@@ -178,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				0801F6142C88EAD200A226F4 /* userModel.swift */,
+				08124AAB2C8CFF6A00BFBEB8 /* AuthViewModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -202,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				0865524D2C82675E00FE47D2 /* chipModels.swift */,
+				08124AA92C8CE99F00BFBEB8 /* profileViewModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -242,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */,
+				08124AAD2C8D076600BFBEB8 /* SignUpView.swift */,
 			);
 			path = Auth_view;
 			sourceTree = "<group>";
@@ -281,6 +349,12 @@
 			name = cuddleme.mobile_swift;
 			packageProductDependencies = (
 				086552412C822DA400FE47D2 /* SwiftfulRouting */,
+				08DC66982C8BBCCD007AF7C2 /* FirebaseAuth */,
+				08DC669A2C8BBCCD007AF7C2 /* FirebaseFirestore */,
+				08DC669C2C8BBCCD007AF7C2 /* FirebaseMessaging */,
+				08DC669E2C8BBCCD007AF7C2 /* FirebaseRemoteConfig */,
+				08DC66A02C8BBCCD007AF7C2 /* FirebaseStorage */,
+				08DC66A22C8BBCCD007AF7C2 /* FirebaseVertexAI-Preview */,
 			);
 			productName = cuddleme.mobile_swift;
 			productReference = 08391D392C747FF100D66796 /* cuddleme.mobile_swift.app */;
@@ -312,6 +386,7 @@
 			mainGroup = 08391D302C747FF100D66796;
 			packageReferences = (
 				086552402C822DA400FE47D2 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+				08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 08391D3A2C747FF100D66796 /* Products */;
 			projectDirPath = "";
@@ -353,22 +428,30 @@
 			files = (
 				0801F6132C885E7300A226F4 /* TestView.swift in Sources */,
 				086552452C82386E00FE47D2 /* profileView.swift in Sources */,
+				08124AA82C8CE42500BFBEB8 /* CuddlePointView.swift in Sources */,
 				08391D3F2C747FF100D66796 /* ContentView.swift in Sources */,
 				0801F6112C87E51800A226F4 /* customScrollView.swift in Sources */,
+				08124AA42C8CBC0200BFBEB8 /* CuddleGraidientButton.swift in Sources */,
 				08EDA2892C7FF2750057F3CA /* cuddleColors.swift in Sources */,
 				08EDA2842C7FD2C10057F3CA /* OnboardingView.swift in Sources */,
 				086552502C827D5300FE47D2 /* chipView.swift in Sources */,
 				086552552C827DE400FE47D2 /* profileBioView.swift in Sources */,
 				0865525F2C8365BF00FE47D2 /* profileInterestView.swift in Sources */,
 				086552532C827DBF00FE47D2 /* profileToolBarView.swift in Sources */,
+				0801F61F2C8A80FA00A226F4 /* CuddleInputField.swift in Sources */,
 				0865524B2C823E5900FE47D2 /* exploreView.swift in Sources */,
 				086552472C8238DE00FE47D2 /* chatView.swift in Sources */,
+				08124AA62C8CE3ED00BFBEB8 /* ProfileWelcomeView.swift in Sources */,
+				08124AAE2C8D076600BFBEB8 /* SignUpView.swift in Sources */,
 				0865524E2C82675E00FE47D2 /* chipModels.swift in Sources */,
 				08EDA28C2C7FFB4A0057F3CA /* dashboardView.swift in Sources */,
+				0801F61D2C8A780600A226F4 /* profileSetupView.swift in Sources */,
 				086552582C827F1500FE47D2 /* profileInfoView.swift in Sources */,
+				08124AAA2C8CE99F00BFBEB8 /* profileViewModel.swift in Sources */,
 				0865525D2C82871600FE47D2 /* settingsView.swift in Sources */,
 				0865525A2C827F5C00FE47D2 /* profileCircleProgressView.swift in Sources */,
 				08391D4C2C74854500D66796 /* fontViewConfig.swift in Sources */,
+				08124AAC2C8CFF6A00BFBEB8 /* AuthViewModel.swift in Sources */,
 				0801F6152C88EAD200A226F4 /* userModel.swift in Sources */,
 				08FBA6382C84F89200E426D0 /* profilePhotosView.swift in Sources */,
 				08391D3D2C747FF100D66796 /* cuddleme_mobile_swiftApp.swift in Sources */,
@@ -431,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -488,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -598,6 +681,14 @@
 				minimumVersion = 5.3.6;
 			};
 		};
+		08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -605,6 +696,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 086552402C822DA400FE47D2 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
 			productName = SwiftfulRouting;
+		};
+		08DC66982C8BBCCD007AF7C2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		08DC669A2C8BBCCD007AF7C2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		08DC669C2C8BBCCD007AF7C2 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		08DC669E2C8BBCCD007AF7C2 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		08DC66A02C8BBCCD007AF7C2 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		08DC66A22C8BBCCD007AF7C2 /* FirebaseVertexAI-Preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08DC66972C8BBCCD007AF7C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseVertexAI-Preview";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

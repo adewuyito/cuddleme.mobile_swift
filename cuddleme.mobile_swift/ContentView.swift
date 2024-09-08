@@ -3,11 +3,16 @@ import SwiftfulRouting
 
 	
 struct ContentView: View {
+  @Environment(AuthViewModel.self) private var authViewModel: AuthViewModel
+  
 	var body: some View {
-		
-			OnboardingView()
-//				.toolbar(.hidden)
-		
+    Group {
+      if authViewModel.userSession != nil {
+        DashboardView()
+      }else {
+        SignUpView()
+      }
+    }
 	}
 }
 

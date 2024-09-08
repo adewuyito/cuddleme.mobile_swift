@@ -7,18 +7,8 @@
 
 import Foundation
 
-class User: Identifiable {
-  let id: UUID
-  private var fullname: String
-  private var bio: String
-  
-  init(fullname: String, bio: String) {
-    self.id = UUID()
-    self.fullname = fullname
-    self.bio = bio
-  }
-}
-
-struct UserViewModel {
-  
+struct User: Identifiable, Codable {
+  let id: String
+  let fullname: String
+  let email: String
 }

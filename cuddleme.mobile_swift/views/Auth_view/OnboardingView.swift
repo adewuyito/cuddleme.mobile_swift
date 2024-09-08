@@ -91,29 +91,6 @@ struct TextLinkBuilder: View {
 		}
 }
 
-struct CuddleGradientButton: View {
-		let label: String
-		let onCall: () -> Void
-
-		var body: some View {
-				Button(
-						action: onCall,
-						label: {
-								Text(label)
-										.cuddleFont(size: 18, weight: .medium)
-										.padding(.vertical, 16)
-										.foregroundStyle(.white)
-										#if os(iOS)
-												.frame(maxWidth: .infinity)
-										#endif
-						}
-				)
-				.buttonStyle(PlainButtonStyle())
-				.background(appLinearGradient)
-				.clipShape(Capsule())
-
-		}
-}
 
 #Preview {
 	RouterView {
