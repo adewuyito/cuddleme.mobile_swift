@@ -12,7 +12,6 @@ struct OnboardingView: View {
 	@Environment(\.router) var router
 		var body: some View {
 				VStack {
-
 						Image("logo_gradient_full")
 								.padding(.bottom, 24)
 								.padding(.top, 52)
@@ -27,10 +26,10 @@ struct OnboardingView: View {
 								.cuddleFont(.Athletics, size: 30.75, weight: .bold)
 								.padding(.bottom, 60)
 
-					CuddleGradientButton(label: "Sign up with Linkedin") { // Find a better fix for this hacky code
+					CuddleGradientButton(label: "Sign up with Linkedin") {
 						router.showScreen(.push) { _ in
-							DashboardView()
-								.toolbar(.hidden)
+              SignUpView()
+                .navigationBarBackButtonHidden(true)
 						}
 					}
 								.padding(.bottom, 32.0)
@@ -93,8 +92,5 @@ struct TextLinkBuilder: View {
 
 
 #Preview {
-	RouterView {
-		router in OnboardingView()
-	}
-	
+    OnboardingView()
 }

@@ -10,26 +10,36 @@ import FirebaseAuth
 import FirebaseFirestore
 import SwiftUI
 
-@Observable
-class AuthViewModel {
+enum AuthState {
+    case undifined
+    case authenticated
+    case notAuthenticated
+}
+
+@Observable class AuthViewModel {
     var userSession: FirebaseAuth.User?
     var currentUser: User?
 
-    init() {
-      checkFirebaseInitializationAndFetchUser()
+    var authState: AuthState = .undifined
+
+    func startUp() {
+
+        self.userSession = Auth.auth().currentUser
+
+        Task {
+            await fetchUser()
+        }
     }
 
-    private func checkFirebaseInitializationAndFetchUser() {
-        if FirebaseApp.app() != nil {
-            self.userSession = Auth.auth().currentUser
+    //  Work on refining this function
+    func listenToAuthStateChanges() {
+        _ = Auth.auth().addStateDidChangeListener { auth, user in
+            if self.userSession != nil {
+                self.authState = .authenticated
 
-            Task {
-                await fetchUser()
+                return
             }
-        } else {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.checkFirebaseInitializationAndFetchUser()
-            }
+            self.authState = user != nil ? .authenticated : .notAuthenticated
         }
     }
 
@@ -46,13 +56,14 @@ class AuthViewModel {
             let _user = User(id: result.user.uid, fullname: fullname, email: email)
 
             let encodedUser = try Firestore.Encoder().encode(_user)
-            try await Firestore.firestore().collection("users").document(_user.id).setData(
-                encodedUser
-            )
 
-            Task {
-                await fetchUser()
-            }
+            try await Firestore
+                .firestore()
+                .collection("users")
+                .document(_user.id)
+                .setData(encodedUser)
+
+            await fetchUser()
 
         } catch {
             print("DEBUG: failed to create user with error \(error.localizedDescription)")

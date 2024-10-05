@@ -1,5 +1,6 @@
 import Firebase
 import SwiftUI
+import SwiftfulRouting
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(
@@ -15,12 +16,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct cuddleme_mobile_swiftApp: App {
 
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-  
-  init() {
-    FirebaseApp.configure()
-  }
-
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     @State private var authViewModel: AuthViewModel = AuthViewModel()
 
@@ -28,6 +24,10 @@ struct cuddleme_mobile_swiftApp: App {
         WindowGroup {
             ContentView()
                 .environment(authViewModel)
+                .onAppear {
+                    authViewModel.startUp()
+                }
+
         }
     }
 }

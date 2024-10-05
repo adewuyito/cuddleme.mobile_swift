@@ -34,6 +34,7 @@
 		08391D582C74869700D66796 /* AthleticsLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D512C74869600D66796 /* AthleticsLight.otf */; };
 		08391D592C74869700D66796 /* AthleticsExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D522C74869600D66796 /* AthleticsExtraBold.otf */; };
 		08391D5A2C74869700D66796 /* AthleticsBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 08391D532C74869700D66796 /* AthleticsBold.otf */; };
+		083C83232C8E398600F1DE8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083C83222C8E398600F1DE8E /* Launch Screen.storyboard */; };
 		086552422C822DA400FE47D2 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 086552412C822DA400FE47D2 /* SwiftfulRouting */; };
 		086552452C82386E00FE47D2 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086552442C82386E00FE47D2 /* profileView.swift */; };
 		086552472C8238DE00FE47D2 /* chatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086552462C8238DE00FE47D2 /* chatView.swift */; };
@@ -90,6 +91,7 @@
 		08391D522C74869600D66796 /* AthleticsExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsExtraBold.otf; sourceTree = "<group>"; };
 		08391D532C74869700D66796 /* AthleticsBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AthleticsBold.otf; sourceTree = "<group>"; };
 		08391D5B2C7486CB00D66796 /* cuddleme-mobile-swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "cuddleme-mobile-swift-Info.plist"; sourceTree = SOURCE_ROOT; };
+		083C83222C8E398600F1DE8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		086552442C82386E00FE47D2 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		086552462C8238DE00FE47D2 /* chatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatView.swift; sourceTree = "<group>"; };
 		086552482C8238F200FE47D2 /* likeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likeView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		0801F6192C8A777F00A226F4 /* Onboarding_flow_view */ = {
 			isa = PBXGroup;
 			children = (
+				08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */,
 				0801F61C2C8A780500A226F4 /* profileSetupView.swift */,
 				0801F61B2C8A77B000A226F4 /* chore_views */,
 				0801F61A2C8A77A200A226F4 /* reusable */,
@@ -192,6 +195,7 @@
 				08391D402C747FF400D66796 /* Assets.xcassets */,
 				08391D422C747FF400D66796 /* Preview Content */,
 				0801F6122C885E7300A226F4 /* TestView.swift */,
+				083C83222C8E398600F1DE8E /* Launch Screen.storyboard */,
 			);
 			path = cuddleme.mobile_swift;
 			sourceTree = "<group>";
@@ -308,7 +312,6 @@
 		08EDA2822C7FD2990057F3CA /* Auth_view */ = {
 			isa = PBXGroup;
 			children = (
-				08EDA2832C7FD2C10057F3CA /* OnboardingView.swift */,
 				08124AAD2C8D076600BFBEB8 /* SignUpView.swift */,
 			);
 			path = Auth_view;
@@ -405,6 +408,7 @@
 				08391D5A2C74869700D66796 /* AthleticsBold.otf in Resources */,
 				0801F6072C87450200A226F4 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				08391D572C74869700D66796 /* AthleticsMedium.otf in Resources */,
+				083C83232C8E398600F1DE8E /* Launch Screen.storyboard in Resources */,
 				0801F60F2C87469900A226F4 /* SF-Pro-Rounded-Light.otf in Resources */,
 				08391D442C747FF400D66796 /* Preview Assets.xcassets in Resources */,
 				08391D412C747FF400D66796 /* Assets.xcassets in Resources */,
@@ -596,6 +600,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +635,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
